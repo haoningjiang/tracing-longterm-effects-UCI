@@ -251,10 +251,7 @@ def main():
         ),
         mode=instructor.Mode.JSON
     )
-    # client = instructor.from_openai(OpenAI(
-    # api_key="AIzaSyD-fmZoBrI-XKXh4G-wefsyGdvyWvlB6DQ",
-    # base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
-    # ))
+
 
     # Two subdirectories are present here, named as 1 and 0
     labels = [0,1]
