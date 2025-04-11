@@ -213,10 +213,6 @@ def main():
         ),
         mode=instructor.Mode.JSON
     )
-    # client = instructor.from_openai(OpenAI(
-    # api_key="AIzaSyD-fmZoBrI-XKXh4G-wefsyGdvyWvlB6DQ",
-    # base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
-    # ))
     
     all_results = []
     
