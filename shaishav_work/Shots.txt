@@ -1,0 +1,54 @@
+1. Communication and Coordination
+- No shots needed
+
+2. Joint Development and Implementation:
+few_shot_examples = """
+Few-Shot Examples:
+
+--------------------------------------------------------------------------------
+Example A – Positive Case (Label 1)
+--------------------------------------------------------------------------------
+Transcript Example:
+"During our recent online workshops with high school students, we've initiated a discussion with Douglas Educational Alliance to co-design a new mentorship model. This collaboration aims to combine our internal expertise with community insights to shape a tailored program."
+
+Annotation:
+- Label: 1
+- Confidence Score: 1.0
+- Justification:
+  In this example, the snippet clearly shows a joint development effort by explicitly naming an external organization ("Douglas Educational Alliance") and describing a concrete collaborative action ("initiated a discussion to co-design a new mentorship model"). The statement indicates that the external partner's insights will be integrated into the program, which directly aligns with the criteria for joint development and implementation.
+- Evidence:
+  "initiated a discussion with Douglas Educational Alliance to co-design a new mentorship model"
+
+--------------------------------------------------------------------------------
+Example B – Positive Case (Label 1)
+--------------------------------------------------------------------------------
+Transcript Example:
+"In our pilot projects, we have forged partnerships in two regions. In the Bighorn area, we've teamed up with Boost Initiative, and in the Douglas region, we are collaborating with the local youth center to roll out a new fellowship program. These partnerships provide essential resources and specialized expertise to support our initiatives."
+
+Annotation:
+- Label: 1
+- Confidence Score: 1.0
+- Justification:
+  This snippet demonstrates joint development by mentioning two clear external collaborations: one with "Boost Initiative" and another with "the local youth center" in the Douglas region. The language used ("teamed up with" and "collaborating with") indicates active engagement with these external entities, satisfying the criteria for joint development and implementation.
+- Evidence:
+  "teamed up with Boost Initiative" and "collaborating with the local youth center"
+
+--------------------------------------------------------------------------------
+Example C – Negative Case (Label 0)
+--------------------------------------------------------------------------------
+Transcript Example:
+"We have been reviewing our internal strategies and evaluating past project outcomes to improve our mentorship program. The focus remains on refining our internal workflows and learning from our previous initiatives without involving any external partners."
+
+Annotation:
+- Label: 0
+- Confidence Score: 1.0
+- Justification:
+  This snippet is classified as negative because it only discusses internal strategies and improvements without referencing any external organization or collaboration. There is no indication of engaging an external partner, which is a key requirement for a snippet to be considered as joint development and implementation.
+- Evidence:
+  "reviewing our internal strategies" and "refining our internal workflows"
+--------------------------------------------------------------------------------
+"""
+
+
+
+-Knowledge INformation and Sharing

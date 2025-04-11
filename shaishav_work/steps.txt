@@ -1,0 +1,41 @@
+Go to /pub/stayde/ollama
+
+module load cuda/12.2.0
+export OLLAMA_MODELS=/pub/ppapadop/ollama/models
+bin/ollama serve &> ollama-serve.log &
+
+CHECK IF RUNNING
+curl -X POST http://localhost:11434/v1/chat/completions \
+     -H "Content-Type: application/json" \
+     -d '{
+       "model": "llama3.1",
+       "messages": [{"role": "user", "content": "hi"}]
+     }'
+
+Open Windows Powershell -- PS C:\Users\SHAISHAV\Desktop\CreativityLabs> scp -r WY_Segments stayde@hpc3.rcic.uci.edu:/pub/stayde/wy_transcripts/
+
+
+cd /pub/stayde/wy_transcripts/python file directory
+
+python filename
+
+
+scp -r stayde@hpc3.rcic.uci.edu:/pub/stayde/wy_transcripts/WY_Segments/WY.10-03-2024_GnA_annotation_results.csv ./
+
+
+The interview transcvript and the LLM coding is not about the categories that you can see in between the interviewer and the intervieww but
+its about how they are collabroarting with their patners outside of this intervewi and then the LLM can code accordinfly.
+
+
+
+
+#EXAMPLES
+Conflict and Resolution
+
+Some Examples for your reference:
+- "We are working with [NAME] to resolve the conflict over resource allocation."
+- "I am collaborating with [NAME] to negotiate the terms of our partnership."
+- "We are in discussions with [NAME] to mediate the differences between our teams."
+
+
+Communication and Coordination
